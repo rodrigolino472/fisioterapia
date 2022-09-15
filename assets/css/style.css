@@ -201,6 +201,23 @@ serviços
 .educacao-item img{
   width: 100%;
 }
+#media{
+  justify-content: center;
+  margin: 1rem 0 2.5rem 0;
+}
+.media-item{
+  border-radius: .3rem;
+  width: 8%;
+  padding: 1rem;
+  margin: .6rem;
+  transition: all .2s;
+}
+.media-item:hover{
+  background: #397f77;
+}
+.media-item img{
+  width: 100%;
+}
 footer{
   background: #397f77;
 }
@@ -283,10 +300,16 @@ footer span{
   .educacao-item{
     width: 80%;
   }
+  .media-item{
+    width: 15%;
+  }
 }
 @media(max-width: 400px){
   .hidroterapia{
     display: none;
+  }
+  .media-item{
+    width: 20%;
   }
 }
 @keyframes zoom{
