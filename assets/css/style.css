@@ -92,10 +92,26 @@ section{
   background-size: cover;
   background-position: center;
   height: auto;
+  max-height: 80vh;
   width: 100%;
   overflow: hidden;
   background: #e3f2fd;
   z-index: -1;
+  position: relative;
+}
+#capa .hidroterapia{
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  top: 30vh;
+  right: 2rem;
+}
+#capa .hidroterapia .hidro{
+  color: #ffffff;
+}
+#capa .hidroterapia .terapia{
+  color: #1976d2;
 }
 #capa .desktop{
   width: 100%;
@@ -170,6 +186,12 @@ serviços
   }
 }
 @media(max-width: 768px){
+  #header{
+    flex-direction: column;
+  }
+  .logo{
+    width: 50%;
+  }
   .servico{
     width: 80%;
   }
@@ -182,7 +204,8 @@ serviços
     transform: translateX(100%);
     padding-top: 3rem;
     width: 70vw;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
     background: #1976d2;
     opacity: .9;
     position: fixed;
@@ -225,6 +248,11 @@ serviços
   }
   *{
     box-shadow: none;
+  }
+}
+@media(max-width: 400px){
+  .hidroterapia{
+    display: none;
   }
 }
 @keyframes zoom{
