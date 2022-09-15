@@ -15,6 +15,11 @@ body{
   min-width: 300px;
   background: #f5f5f5;
 }
+h2{
+  letter-spacing: .05rem;
+  margin: 5rem 0 1rem 0;
+  text-align: center;
+}
 #header,
 #main,
 #footer{
@@ -179,7 +184,23 @@ serviços
 .servicos .servico .servico-btn:hover{
   opacity: .9;
 }
-
+/*Educação-------------------*/
+#educacao{
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+.educacao-item{
+  font-size: 1.125rem;
+  color: #2c696d;
+  letter-spacing: .025rem;
+  width: 40%;
+  margin: .8rem;
+  min-width: 300px;
+}
+.educacao-item img{
+  width: 100%;
+}
 @media(max-width: 1024px){
   .servico{
     width: 45%;
@@ -193,7 +214,7 @@ serviços
     width: 50%;
   }
   .servico{
-    width: 80%;
+    width: 90%;
   }
   .hamburger{
     display: block;
@@ -206,7 +227,7 @@ serviços
     width: 70vw;
     min-height: 100vh;
     overflow-y: scroll;
-    background: #1976d2;
+    background: #2c696d;
     opacity: .9;
     position: fixed;
     top: 0;
@@ -248,6 +269,9 @@ serviços
   }
   *{
     box-shadow: none;
+  }
+  .educacao-item{
+    width: 80%;
   }
 }
 @media(max-width: 400px){
