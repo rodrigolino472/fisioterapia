@@ -201,6 +201,16 @@ serviços
 .educacao-item img{
   width: 100%;
 }
+footer{
+  background: #397f77;
+}
+footer span{
+  padding: 3rem;
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  color: #ffffff;
+}
 @media(max-width: 1024px){
   .servico{
     width: 45%;
