@@ -12,7 +12,14 @@ configurações mais genéricas
 */
 body{
   max-width: 100vw;
+  min-width: 300px;
   background: #f5f5f5;
+}
+#header,
+#main,
+#footer{
+  min-width: 100%;
+  max-width: 100%;
 }
 .flex{
   display: flex;
@@ -28,12 +35,12 @@ confgurações do head
 */
 #header{
   width: 100%;
-  padding: 1.5rem calc(100% - 95%);
+  padding: .5rem calc(100% - 95%);
   box-shadow: 0 .125rem .2rem #000000;
   margin-bottom: .125rem;
 }
 .logo{
-  width: 10%;
+  width: 20%;
 }
 .logo img{
   width: 100%;
@@ -87,12 +94,17 @@ section{
   height: auto;
   width: 100%;
   overflow: hidden;
-  background: #000;
+  background: #e3f2fd;
   z-index: -1;
 }
-#capa img{
+#capa .desktop{
   width: 100%;
   animation: zoom 15s ease-in-out;
+}
+#capa .mobile{
+  width: 100%;
+  animation: zoom 15s ease-in-out;
+  display: none;
 }
 
 /*
@@ -138,6 +150,8 @@ serviços
   margin: 2rem;
 }
 .servicos .servico .servico-btn{
+  display: block;
+  width: 50%;
   background: #397f77;
   color: #ffffff;
   margin: 0 2rem 2rem 2rem;
@@ -169,7 +183,8 @@ serviços
     padding-top: 3rem;
     width: 70vw;
     height: 100vh;
-    background: rgba(0, 0, 0, .9);
+    background: #1976d2;
+    opacity: .9;
     position: fixed;
     top: 0;
     right: 0;
@@ -196,11 +211,26 @@ serviços
     text-align: center;
     font-size: 1.5rem;
   }
+  #capa .desktop{
+    display: none;
+  }
+  #capa .mobile{
+    display: block;
+  }
+  .servico a{
+    width: 100%;
+  }
+  .servicos .servico .servico-btn{
+    width:80%;
+  }
+  *{
+    box-shadow: none;
+  }
 }
 @keyframes zoom{
   0%{
     scale: 1.2;
-    opacity: .7;
+    opacity: .8;
   }100%{
     scale: 1;
     opacity: 1;
